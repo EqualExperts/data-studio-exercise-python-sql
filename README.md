@@ -16,5 +16,5 @@ Your task is to make it convenient for data scientists to execute analytics-styl
 You will be asked to demonstrate the solution, including:
 - how you met the data scientist needs
 - how you did (or would) ensure data quality
-- what would to be done for the solution scale to work with a 10TB dataset with new data arriving each day
+- what would need to change for the solution scale to work with a 10TB dataset with new data arriving each day
 
