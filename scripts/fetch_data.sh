@@ -2,12 +2,14 @@
 
 set -euo pipefail
 
-mkdir -p uncommitted
+OUTPUT_DIR=uncommitted
+mkdir -p ${OUTPUT_DIR}
 
-OUTPUT_PATH=uncommitted/dataset.7z
+OUTPUT_PATH=${OUTPUT_DIR}/dataset.tar.gz
+
 
 if [ ! -f ${OUTPUT_PATH} ]; then
-  wget -O ${OUTPUT_PATH} https://archive.org/download/stackexchange/ai.stackexchange.com.7z
+  curl -L -o ${OUTPUT_PATH} "https://drive.google.com/uc?export=download&id=1-gxeGCgavT48ZyqNo8udsAlOwKVc62Em"
 fi
 
-7za e -ouncommitted/ ${OUTPUT_PATH}
+tar -xf  ${OUTPUT_PATH} -C ${OUTPUT_DIR}
