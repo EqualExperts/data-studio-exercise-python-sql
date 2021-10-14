@@ -1,6 +1,3 @@
-Write a README for the reviewer
-
-
 
 ## Exercise Instructions
 
