@@ -16,10 +16,10 @@ You are free to change anything about this bootstrap solution as you see fit, so
 Your task is to make the Posts and Tags content available in an SQLite3 database.
 [src/main.py](src/main.py) is provided as an entrypoint, and has an example of parsing the source data.
 [src/db.py](src/db.py) is empty, but the associated test demonstrates interaction with an SQLite3 database.
+You should ensure your code is correctly formatted and lints cleanly.
 
 You will aim to make it convenient for data scientists to execute analytics-style queries reliably over the Posts and Tags tables.
 You will be asked to demonstrate the solution, including:
 - how you met the data scientist needs
 - how you did (or would) ensure data quality
 - what would need to change for the solution scale to work with a 10TB dataset with new data arriving each day
-
