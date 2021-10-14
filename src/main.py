@@ -1,3 +1,4 @@
+'Entrypoint to populate the database'
 import defusedxml.ElementTree as ET
 
 

@@ -10,9 +10,14 @@ You are free to change anything about this bootstrap solution as you see fit, so
 - The project is set up to use Pipenv & Python 3.8
 - SQLite3 provides an infrastructure-free simple data warehouse stand-in
 - Facilites for linting etc. are provided as scripts and integrated with Pipenv
-- A script to fetch the dataset is provided and integrated with Pipenv
 
-Your task is to make it convenient for data scientists to execute analytics-style queries reliably over the Posts and Tags tables.
+[scripts/fetch_data.sh](scripts/fetch_data.sh) is provided to download and decompress the dataset.
+
+Your task is to make the Posts and Tags content available in an SQLite3 database.
+[src/main.py](src/main.py) is provided as an entrypoint, and has an example of parsing the source data.
+[src/db.py](src/db.py) is empty, but the associated test demonstrates interaction with an SQLite3 database.
+
+You will aim to make it convenient for data scientists to execute analytics-style queries reliably over the Posts and Tags tables.
 You will be asked to demonstrate the solution, including:
 - how you met the data scientist needs
 - how you did (or would) ensure data quality
