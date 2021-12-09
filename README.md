@@ -23,12 +23,12 @@ is provided to download and decompress the dataset which is composed by two json
 
 [src/db.py](src/db.py) is empty, but the associated test demonstrates interaction with an SQLite3 database.
 
-##### Your data ingestion should take into consideration the following:
+#### Your data ingestion should take into consideration the following:
 - the final data should be friendly to query;
 - basic data quality issues should be handled on the ingestion;
 - the ingestion code and strategy should be production level.
 
-##### Things we value from a software engineering perspective:
+#### Things we value:
 - Self-explanatory code – the solution must speak for itself. Multiple paragraphs explaining the solution are a sign that isn’t straightforward enough to understand purely by reading the code. Also, you should ensure your code is correctly formatted and lints cleanly.
 - Tests – the solution must be well tested and possibly using a (test­-first) approach.
 - Simplicity – We value simplicity as an architectural virtue and a development practice. Solutions should reflect the difficulty of the assigned task, and should NOT be overly complex. Layers of abstraction, patterns, or architectural features that aren’t called for should NOT be included.
