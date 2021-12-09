@@ -1,11 +1,8 @@
-'Entrypoint to populate the database'
-import defusedxml.ElementTree as ET
+import json
 
-
-def to_sql(post):
-    return (post.attrib['Id'], post.attrib['PostTypeId'], post.attrib['CreationDate'])
-
-
-with open('uncommitted/Posts.xml', 'r') as posts_in:
-    tree = ET.parse(posts_in)
-    print([to_sql(elem) for elem in tree.getroot()][:10])
+# The following code is purely illustrative
+try:
+    with open('uncommitted/Posts.json', 'r') as posts_in:
+        print(json.load(posts_in)[0])
+except FileNotFoundError:
+    print("Please download the dataset using 'pipenv run fetch_data'")

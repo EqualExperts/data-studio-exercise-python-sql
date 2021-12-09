@@ -1,25 +1,45 @@
-## Exercise Instructions
+## Data Engineering Challenge
+Thank you for taking the time to participate in this challenge. Please read carefully all the instructions below and don’t hesitate to contact us if you have any queries. 
 
-This is a bootstrap project to load interesting data from a Stack Exchange dataset into a data warehouse.
-You are free to change anything about this bootstrap solution as you see fit, so long as it can still be executed by a reviewer.
+As a Data Engineer, you should NOT find this exercise to be particularly difficult. 
+We are expecting a simple solution that addresses just what is asked, and you should take you no more than 90 minutes.
+
+## Exercise Instructions 
+
+Imagine that you are working in an organisation, and the data scientists/analysts need data from Stackexchange (Posts and Votes) to make data analysis. The exercise consists in making a light data pipeline which ingests data from json files into a data warehouse. To simplify the exercise you should consider you just need to ingest the data which is in files, there is no need to implement a strategy to coupe with a continuous ingestion, neither with a large amount of data. Although we'll ask a question at the end that you can elaborate what will you change in your strategy to coupe with that.
+
+This repo contains a bootstrap project to create the data ingestion.
+You are free to change anything about this bootstrap solution as you see fit (import another libs, create/delete src files, for example), so long as it can still be executed by a reviewer.
 
 - The project is set up to use Pipenv & Python 3.8
 - SQLite3 provides an infrastructure-free simple data warehouse stand-in
+- Testing environment with pytest
 - Facilites for linting etc. are provided as scripts and integrated with Pipenv
 
-[scripts/fetch_data.sh](scripts/fetch_data.sh) is provided to download and decompress the dataset.
+[scripts/fetch_data.sh](scripts/fetch_data.sh) 
+is provided to download and decompress the dataset which is composed by two json files (Posts.json and Votes.json).
 
-Your task is to make the Posts and Tags content available in an SQLite3 database.
-[src/main.py](src/main.py) is provided as an entrypoint, and has an example of parsing the source data.
+[src/main.py](src/main.py) is provided as an entry point.
+
 [src/db.py](src/db.py) is empty, but the associated test demonstrates interaction with an SQLite3 database.
-You should ensure your code is correctly formatted and lints cleanly.
 
-You will aim to make it convenient for data scientists to execute analytics-style queries reliably over the Posts and Tags tables.
-You will be asked to demonstrate the solution, including:
-- how you met the data scientist needs
-- how you did (or would) ensure data quality
-- what would need to change for the solution scale to work with a 10TB dataset with new data arriving each day
+##### Your data ingestion should take into consideration the following:
+- the final data should be friendly to query;
+- basic data quality issues should be handled on the ingestion;
+- the ingestion code and strategy should be production level.
 
-## Your Writeup!
+##### Things we value from a software engineering perspective:
+- Self-explanatory code – the solution must speak for itself. Multiple paragraphs explaining the solution are a sign that isn’t straightforward enough to understand purely by reading the code. Also, you should ensure your code is correctly formatted and lints cleanly.
+- Tests – the solution must be well tested and possibly using a (test­-first) approach.
+- Simplicity – We value simplicity as an architectural virtue and a development practice. Solutions should reflect the difficulty of the assigned task, and should NOT be overly complex. Layers of abstraction, patterns, or architectural features that aren’t called for should NOT be included.
 
-Please include any instructions, answers and details of any import decisions you made here for the reviewer.
+### Final notes
+Please include any instructions or details of any important decisions you made. Also please answer the following questions: 
+- How did you meet the data scientist needs?
+- How did you ensure data quality?
+- What would need to change for the solution scale to work with a 10TB dataset with new data arriving each day?
+
+## Next Phase
+We are expecting you to succeed in this phase, so the next phase is an interview where we are expecting that you can show and run your solution on your end. 
+We'll give you our feedback and we'll ask for you to pair with us to solve a couple of sql questions on the loaded data. 
+Apart from the exercise, we'll have a conversation about your experience, and you'll let us know in detail your past challenges and your future expectations. Good Luck!

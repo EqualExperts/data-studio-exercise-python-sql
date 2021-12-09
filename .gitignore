@@ -3,4 +3,5 @@
 __pycache__/
 .venv/
 uncommitted/
+warehouse.db
 .coverage
