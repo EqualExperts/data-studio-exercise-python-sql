@@ -23,9 +23,6 @@ jobs:
     - name: Install dependencies
       run: |
         pipenv install --deploy --dev
-    - name: Download Dataset
-      run: |
-        pipenv run fetch_data
     - name: Run Lint
       run: |
         pipenv run lint
