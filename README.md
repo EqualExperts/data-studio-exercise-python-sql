@@ -1,3 +1,4 @@
+[![Python exercise](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/python-exercise.yml/badge.svg)](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/python-exercise.yml)
 ## Data Engineering Challenge
 Thank you for taking the time to participate in this challenge. Please read carefully all the instructions below and don’t hesitate to contact us if you have any queries. 
 
