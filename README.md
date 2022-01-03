@@ -1,31 +1,36 @@
-[![Python exercise](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/python-exercise.yml/badge.svg)](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/python-exercise.yml)
+[![Scala exercise](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/scala-exercise.yml/badge.svg)](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/scala-exercise.yml)
 ## Data Engineering Challenge
 Thank you for taking the time to participate in this challenge. Please read carefully all the instructions below and don’t hesitate to contact us if you have any queries. 
 
 As a Data Engineer, you should NOT find this exercise to be particularly difficult. 
-We are expecting a simple solution that addresses just what is asked, and you should take you no more than 90 minutes.
+We are expecting a simple solution that addresses just what is asked, and you should take no more than 90 minutes.
 
 ## Exercise Instructions 
 
 Imagine that you are working in an organisation, and the data scientists/analysts need data from Stackexchange (Posts and Votes) to make data analysis. The exercise consists in making a light data pipeline which ingests data from json files into a data warehouse. To simplify the exercise you should consider you just need to ingest the data which is in files, there is no need to implement a strategy to coupe with a continuous ingestion, neither with a large amount of data. Although we'll ask a question at the end that you can elaborate what will you change in your strategy to coupe with that.
 
-This repo contains a bootstrap project to create the data ingestion.
-You are free to change anything about this bootstrap solution as you see fit (import another libs, create/delete src files, for example), so long as it can still be executed by a reviewer.
+This repo contains a bootstrap project to create the data ingestion in scala.
+The project is set up to be executed inside an sbt-docker image, so the versions of scala and java and sbt can be easily replicate without changing our local env. You are free to change anything about this bootstrap solution as you see fit (import another libs, create/delete src files, for example), so long as it can still be executed by a reviewer.
 
-- The project is set up to use Pipenv & Python 3.8
-- SQLite3 provides an infrastructure-free simple data warehouse stand-in
-- Testing environment with pytest
-- Facilites for linting etc. are provided as scripts and integrated with Pipenv
+- The project is set up to use scala 2.12.10 and sbt 1.3.5
+- H2 database provides an infrastructure-free simple data warehouse stand-in
+- Testing environment with scalatest
+- Facilites to compile, test and run inside the sbt-docker container.
 
-[scripts/fetch_data.sh](scripts/fetch_data.sh) 
-is provided to download and decompress the dataset which is composed by two json files (Posts.json and Votes.json).
+[Makefile](Makefile) 
+is provided with the following targets: compile, test, fetch-data and run.
 
-[src/main.py](src/main.py) is provided as an entry point.
+[fetch_data.sh](fetch_data.sh) 
+is provided to download and decompress the dataset which is composed by two json files (Posts.json and Votes.json). It's invoked by the Makefile when you execute run or fetch-data. 
 
-[src/db.py](src/db.py) is empty, but the associated test demonstrates interaction with an SQLite3 database.
+[ExerciseApp.scala](src/main/scala/com/exercise/ExerciseApp.scala) is provided as an entry point with some illustrative code reading one entry of json from one of the files.
+
+[ExerciseSpec.spec](src/test/scala/com/exercise/ExerciseSpec.scala) contains a test showing a sample usage of h2 database.
+
+The sample code and test provided are meant to be deleted when you start to develop your solution.
 
 #### Your data ingestion should take into consideration the following:
-- the final data should be friendly to query;
+- ingested data should be friendly to query;
 - basic data quality issues should be handled on the ingestion;
 - the ingestion code and strategy should be production level.
 
