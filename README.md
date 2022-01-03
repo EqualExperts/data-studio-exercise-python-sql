@@ -10,7 +10,7 @@ We are expecting a simple solution that addresses just what is asked, and you sh
 Imagine that you are working in an organisation, and the data scientists/analysts need data from Stackexchange (Posts and Votes) to make data analysis. The exercise consists in making a light data pipeline which ingests data from json files into a data warehouse. To simplify the exercise you should consider you just need to ingest the data which is in files, there is no need to implement a strategy to coupe with a continuous ingestion, neither with a large amount of data. Although we'll ask a question at the end that you can elaborate what will you change in your strategy to coupe with that.
 
 This repo contains a bootstrap project to create the data ingestion in scala.
-The project is set up to be executed inside an sbt-docker image, so the versions of scala and java and sbt can be easily replicate without changing our local env. You are free to change anything about this bootstrap solution as you see fit (import another libs, create/delete src files, for example), so long as it can still be executed by a reviewer.
+The project is set up to be executed inside an sbt-docker image, so the versions of scala and java and sbt can be easily replicate. You are free to change anything about this bootstrap solution as you see fit (import another libs, create/delete src files, for example), so long as it can still be executed by a reviewer.
 
 - The project is set up to use scala 2.12.10 and sbt 1.3.5
 - H2 database provides an infrastructure-free simple data warehouse stand-in
