@@ -3,7 +3,7 @@
 Thank you for taking the time to participate in this challenge. Please read carefully all the instructions below and don’t hesitate to contact us if you have any queries. 
 
 As a Data Engineer, you should NOT find this exercise to be particularly difficult. 
-We are expecting a simple solution that addresses just what is asked, and you should take you no more than 90 minutes.
+We are expecting a simple solution that addresses just what is asked, and you should take no more than 90 minutes.
 
 ## Exercise Instructions 
 
