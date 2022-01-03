@@ -5,7 +5,7 @@ Thank you for taking the time to participate in this challenge. Please read care
 As a Data Engineer, you should NOT find this exercise to be particularly difficult. 
 We are expecting a simple solution that addresses just what is asked, and you should take no more than 90 minutes.
 
-This exercise is based on python, although if you prefer Scala there is a scala version [here](https://github.com/EqualExperts/data-studio-exercise-python-sql/tree/json-exercise-scala).
+This exercise is based on Python, although if you prefer Scala there is a Scala version [here](https://github.com/EqualExperts/data-studio-exercise-python-sql/tree/json-exercise-scala).
 
 ## Exercise Instructions 
 
