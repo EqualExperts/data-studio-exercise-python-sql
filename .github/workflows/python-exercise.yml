@@ -2,9 +2,9 @@ name: Python exercise
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, json-exercise ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, json-exercise]
 
 jobs:
   build:
