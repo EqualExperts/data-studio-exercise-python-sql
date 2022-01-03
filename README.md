@@ -5,11 +5,13 @@ Thank you for taking the time to participate in this challenge. Please read care
 As a Data Engineer, you should NOT find this exercise to be particularly difficult. 
 We are expecting a simple solution that addresses just what is asked, and you should take no more than 90 minutes.
 
+This exercise is based on python, although if you prefer Scala there is a scala version [here](https://github.com/EqualExperts/data-studio-exercise-python-sql/tree/json-exercise-scala).
+
 ## Exercise Instructions 
 
 Imagine that you are working in an organisation, and the data scientists/analysts need data from Stackexchange (Posts and Votes) to make data analysis. The exercise consists in making a light data pipeline which ingests data from json files into a data warehouse. To simplify the exercise you should consider you just need to ingest the data which is in files, there is no need to implement a strategy to coupe with a continuous ingestion, neither with a large amount of data. Although we'll ask a question at the end that you can elaborate what will you change in your strategy to coupe with that.
 
-This repo contains a bootstrap project to create the data ingestion.
+This repo contains a python bootstrap project to create the data ingestion.
 You are free to change anything about this bootstrap solution as you see fit (import another libs, create/delete src files, for example), so long as it can still be executed by a reviewer.
 
 - The project is set up to use Pipenv & Python 3.8
