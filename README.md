@@ -37,7 +37,7 @@ is provided to download and decompress the dataset which is composed by two json
 - Simplicity – We value simplicity as an architectural virtue and a development practice. Solutions should reflect the difficulty of the assigned task, and should NOT be overly complex. Layers of abstraction, patterns, or architectural features that aren’t called for should NOT be included.
 
 ### Final notes
-You should submit a zipfile with your solution (not a fork neither a pr). You can and should edit this readme to include any instructions or details of any important decisions you made. Also, please answer the following questions: 
+You should submit a zip file containing your solution. You can and should edit this readme to include any instructions or details of any important decisions you made. Also, please answer the following questions: 
 - How did you meet the data scientist needs?
 - How did you ensure data quality?
 - What would need to change for the solution scale to work with a 10TB dataset with new data arriving each day?
