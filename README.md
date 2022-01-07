@@ -37,12 +37,13 @@ is provided to download and decompress the dataset which is composed by two json
 - Simplicity – We value simplicity as an architectural virtue and a development practice. Solutions should reflect the difficulty of the assigned task, and should NOT be overly complex. Layers of abstraction, patterns, or architectural features that aren’t called for should NOT be included.
 
 ### Final notes
-Please include any instructions or details of any important decisions you made. Also please answer the following questions: 
+You should submit a zipfile with your solution (not a fork neither a pr). You can and should edit this readme to include any instructions or details of any important decisions you made. Also, please answer the following questions: 
 - How did you meet the data scientist needs?
 - How did you ensure data quality?
 - What would need to change for the solution scale to work with a 10TB dataset with new data arriving each day?
 
+Your submission is your own work, you will not share your submission with others (including sharing your repository on Github) and you will not otherwise engage in activities that dishonestly improve your result.
+
 ## Next Phase
 We are expecting you to succeed in this phase, so the next phase is an interview where we are expecting that you can show and run your solution on your end. 
-We'll give you our feedback and we'll ask for you to pair with us to solve a couple of sql questions on the loaded data. 
-Apart from the exercise, we'll have a conversation about your experience, and you'll let us know in detail your past challenges and your future expectations. Good Luck!
+Apart from the exercise walktrough and questions from our side, we'll have a conversation about your experience, and you'll let us know in detail your past challenges and your future expectations. Good Luck!
