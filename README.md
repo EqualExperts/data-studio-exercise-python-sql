@@ -2,7 +2,7 @@
 ## Exercise Instructions 
 
 This is a bootstrap project to load interesting data from a Stack Exchange dataset into a data warehouse.
-You are free to change anything about this bootstrap solution as you see fit, so long as it can still be executed by a reviewer.
+You are free to change anything about this bootstrap solution as you see fit, so long as it can still be executed by a reviewer. Please submit your solution as a Zip archive.
 
 - The project is set up to use Pipenv & Python 3.8
 - SQLite3 provides an infrastructure-free simple data warehouse stand-in
