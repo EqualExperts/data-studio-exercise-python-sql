@@ -1,4 +1,7 @@
 [![Python exercise](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/python-exercise.yml/badge.svg)](https://github.com/EqualExperts/data-studio-exercise-python-sql/actions/workflows/python-exercise.yml)
+
+The exercise is being deprecated, new version [here](https://github.com/EqualExperts/data-engineering-exercise-python).
+
 ## Exercise Instructions 
 
 This is a bootstrap project to load interesting data from a Stack Exchange dataset into a data warehouse.
